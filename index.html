@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicóloga Claricia</title>
+    <title>Claricia Ferreira Lima - Psicóloga</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -38,7 +38,7 @@
                 </ul>
             </nav>
         </div>
-    </aside>    
+    </aside>
     <section id="Logo" class="intro-text main-bg">
         <div class="menu-spacing"></div>
         <div class="main-content intro-content">
@@ -195,25 +195,17 @@
             <div class="estrelas">
                 &#9733;&#9733;&#9733;&#9733;&#9733;
             </div>
-            <div class="grid">
-                <div class="feedback-img">
-                    <img src="assets/img/feedbackFour20.jpg" alt="feedback-image">
+            <div class="slider-container">
+                <button class="btn-prev" onclick="mudarSlide(-1)">&#10094;</button>
+                <div class="grid" id="sliderTrack">
+                    <img class='img-transform img-radius' src="assets/img/feedbackFour20.jpg" alt="feedback-image">
+                    <img class='img-transform img-radius' src="assets/img/feedbackThree20.jpg" alt="feedback2-image">
+                    <img class='img-transform img-radius' src="assets/img/feedbackTwo17.jpg" alt="feedback3-image">
+                    <img class='img-transform img-radius' src="assets/img/feedbackFiveFormat25.jpg" alt="feedback4-image">
+                    <img class='img-transform img-radius' src="assets/img/feedbackSix25.jpg" alt="feedback5-image">
+                    <img class='img-transform img-radius' src="assets/img/feedbackOne25.jpg" alt="feedback6-image">
                 </div>
-                <div class="feedback-img">
-                    <img src="assets/img/feedbackThree20.jpg" alt="feedback2-image">
-                </div>
-                <div class="feedback-img">
-                    <img src="assets/img/feedbackTwo17.jpg" alt="feedback3-image">
-                </div>
-                <div class="feedback-img">
-                    <img src="assets/img/feedbackFiveFormat25.jpg" alt="feedback4-image">
-                </div>
-                <div class="feedback-img">
-                    <img src="assets/img/feedbackSix25.jpg" alt="feedback5-image">
-                </div>
-                <div class="feedback-img">
-                    <img src="assets/img/feedbackOne25.jpg" alt="feedback6-image">
-                </div>
+                <button class="btn-next" onclick="mudarSlide(1)">&#10095;</button>
             </div>
             <div class="div-botao">
                 <a class="botao" href="https://wa.me/5524981338801">Aproveite esta oportunidade</a>
@@ -302,6 +294,7 @@
     <a class="botao btn-whatsapp" href="https://wa.me/5524981338801">Agendar sessão</a>
     <script src="assets/js/createClassToggle.js"></script>
     <script src="assets/js/createtag.js"></script>
+    <script src="assets/js/slideFeed.js"></script>
 </body>
 
 </html>
